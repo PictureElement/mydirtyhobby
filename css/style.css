@@ -1,0 +1,164 @@
+/*
+ * RESET
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, 
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, 
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #b00000;
+  text-decoration: none;
+}
+
+/*
+ * SPACING
+ */
+
+.p-1 {
+  padding: 10px;
+}
+
+.m-1 {
+  margin: 10px;
+}
+
+.m-r-1 {
+  margin-right: 10px;
+}
+
+.m-b-1 {
+  margin-bottom: 10px;
+}
+
+.m-b-2 {
+  margin-bottom: 20px;
+}
+
+.p-y-2 {
+  padding: 20px 0;
+}
+
+/*
+ * HEADER 
+ */
+
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #b00000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  padding: 20px 0;
+}
+
+.account-settings {
+  text-align: right;
+}
+
+.account-settings ul {
+  position: relative;
+  bottom: 10px;
+}
+
+.account-settings ul li { 
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.account-settings ul li:first-child:after {
+  content: "|";
+  color: #b00000;
+  padding-left: 20px;
+}
+
+/*
+ * SIDEBAR
+ */
+
+.sidebar {
+  background-color: gray;
+  height: auto;
+}
+
+/*
+ * CATEGORY TITLE
+ */
+
+.category-title {
+  background-color: #e0e0e0;
+  color: #b00000;
+  font-weight: bold;
+  border-bottom: 1px solid #b00000;
+}
+
+/*
+ * VIDEO CARD
+ */
+
+.card-body {
+  background-color: #e0e0e0;
+}
+
+.card-title {
+  border-bottom: 1px solid #b00000;
+  background: #fff;
+  padding: 10px;
+}
+
+.card-date, .card-duration {
+  padding: 10px;
+}
+
+.card-username, .card-votes {
+  text-align: right;
+  padding: 10px;
+}
+
+.card-username {
+  text-decoration: underline;
+}
+
+.card-btn {
+  text-align: center;
+  display: block;
+  background: #cbcbcb;
+  color: #01ab30;
+  padding: 10px;
+}
+
+
+
+/*
+ * FOOTER
+ */
+
+footer {
+  margin-top: 95px;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.flexbox-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
