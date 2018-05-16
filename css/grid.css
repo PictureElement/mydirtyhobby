@@ -9,7 +9,7 @@ html {
 }
 
 .container {
-  max-width: 950px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -37,4 +37,17 @@ html {
 
 [class*="col-"] {
   /*border: 1px solid red;*/
+  margin-right: 0.625rem; /* 10px */
 }
+
+[class*="col-"] {
+  /*border: 1px solid red;*/
+  margin-right: 0.625rem; /* 10px */
+}
+
+.row [class*="col-"]:last-child {
+  margin-right: 0;
+}
+
+
+

@@ -16,9 +16,14 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+html {
+  font-size: 1rem; /* 16px */
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #f1f1f1;
+  color: #333;
 }
 
 img {
@@ -31,32 +36,8 @@ a {
   text-decoration: none;
 }
 
-/*
- * SPACING
- */
-
-.p-1 {
-  padding: 10px;
-}
-
-.m-1 {
-  margin: 10px;
-}
-
-.m-r-1 {
-  margin-right: 10px;
-}
-
-.m-b-1 {
-  margin-bottom: 10px;
-}
-
-.m-b-2 {
-  margin-bottom: 20px;
-}
-
-.p-y-2 {
-  padding: 20px 0;
+em { 
+  font-style: italic;
 }
 
 /*
@@ -67,7 +48,8 @@ header {
   background-color: #fff;
   border-bottom: 2px solid #b00000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-  padding: 20px 0;
+  margin-bottom: 0.625rem;
+  padding: 1.25rem 0.625rem;
 }
 
 .account-settings {
@@ -76,18 +58,18 @@ header {
 
 .account-settings ul {
   position: relative;
-  bottom: 10px;
+  bottom: 0.625rem; /* 10px */
 }
 
 .account-settings ul li { 
   display: inline-block;
-  padding-left: 5px;
+  padding-left: 0.3125rem; /* 5px */
 }
 
 .account-settings ul li:first-child:after {
   content: "|";
   color: #b00000;
-  padding-left: 20px;
+  padding-left: 1.25rem; /* 20px */
 }
 
 /*
@@ -95,8 +77,31 @@ header {
  */
 
 .sidebar {
-  background-color: gray;
-  height: auto;
+  background-color: #fff;
+  height: 100%;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.sidebar a {
+  display: block;
+  padding: 0.625rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.signup-btn {
+  background: #01ab30;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+/*
+ * BANNER SLIDER
+ */
+.banner {
+  margin-bottom: 1.25rem;
 }
 
 /*
@@ -108,11 +113,17 @@ header {
   color: #b00000;
   font-weight: bold;
   border-bottom: 1px solid #b00000;
+  margin-bottom: 0.625rem;
+  padding: 0.625rem;
 }
 
 /*
  * VIDEO CARD
  */
+
+.card {
+  margin-bottom: 0.625rem;
+}
 
 .card-body {
   background-color: #e0e0e0;
@@ -121,16 +132,16 @@ header {
 .card-title {
   border-bottom: 1px solid #b00000;
   background: #fff;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .card-date, .card-duration {
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .card-username, .card-votes {
   text-align: right;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .card-username {
@@ -138,23 +149,24 @@ header {
 }
 
 .card-btn {
+  border-top: 1px solid #fff;
   text-align: center;
   display: block;
   background: #cbcbcb;
   color: #01ab30;
-  padding: 10px;
+  padding: 0.625rem;
 }
-
-
 
 /*
  * FOOTER
  */
 
 footer {
-  margin-top: 95px;
+  margin-top: 6rem; /* 96px */
   background-color: #2b2b2b;
   color: #fff;
+  padding: 1.25rem 0.625rem;
+  font-weight: bold;
 }
 
 .flexbox-centering {
