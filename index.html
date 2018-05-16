@@ -5,9 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Landing page</title>
-    <!-- Default Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" media="screen and (min-width: 576px)" href="css/style-small.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/style-medium.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 576px)" href="css/grid-small.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/grid-medium.css">
     <!-- Web icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -16,19 +20,9 @@
     <!-- HEADER -->
     <header class="container-fluid">
       <div class="container">
-        <div class="row">
-          <!-- LOGO -->
-          <div class="col-6 logo">
-            <a href="#"><img src="assets/logo.jpg" alt="logo"></a>
-          </div>
-          <!-- ACCOUNT SETTINGS -->
-          <div class="col-6 account-settings">
-            <ul>
-              <li><a href="#">Password recovery</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Registration</a></li>
-            </ul>
-          </div>
+        <!-- LOGO -->
+        <div class="logo">
+          <a href="#"><img src="assets/logo.jpg" alt="logo"></a>
         </div>
       </div>
     </header>
@@ -38,7 +32,8 @@
       <div class="row">
 
         <!-- SIDEBAR -->
-        <section id="sidebar" class="col-3 sidebar">
+        <section id="sidebar" class="col-md-3 sidebar">
+          <div class="text-center"><button class="d-md-none" type="button" aria-label="Toggle sidebar navigation"><i class="fa fa-bars" aria-hidden="true"></i></button></div>
           <a href="#" class="signup-btn"><em>FREE</em> SIGNUP</a>
           <a href="#">WEBCAMS</a>
           <a href="#">VIDEOS</a>
@@ -47,88 +42,75 @@
           <a href="#">TOP AMATEURS</a>
           <a href="#">TOP NEWCOMER</a>
           <a href="#">CATEGORIES</a>
+          <!-- ACCOUNT SETTINGS -->
+          <div class="account-settings">
+            <a href="#">Password recovery</a>
+            <a href="#">Login</a>
+            <a href="#">Registration</a>
+          </div>
         </section>
 
         <!-- ARTICLE -->
-        <article class="col-9">
+        <article class="col-12 col-md-9 ">
 
           <!-- BANNER SLIDER -->
           <section class="banner">
-            <img src="assets/banner_01.jpg" alt="banner">
+            <!-- Banner 1 -->
+            <div class="mySlides">
+              <img src="assets/banner_01.jpg" alt="banner 1">
+            </div>
+            <!-- Banner 2 -->
+            <div class="mySlides">
+              <img src="assets/banner_02.jpg" alt="banner 2">
+            </div>
           </section>
-
+        
           <!-- CATEGORY TITLE -->
-          <section class="category-title">
-            <h1>Top Videos</h1>
-          </section>
-
+          <h1 class="category-title">Top Videos</h1>
+          
           <!-- VIDEO ROW 1 -->
           <section class="row">
-            <div class="col-4 card">
+            <div class="col-sm-4 card">
               <img src="assets/teaser.jpg" alt="teaser">
               <div class="card-body">
                 <h5 class="card-title">Video Title</h5>
-                <div class="row">
-                  <div class="col-6 card-date">
-                    19.02.17
-                  </div>
-                  <div class="col-6 card-username">
-                    <a href="#">Username</a>
-                  </div>
+                <div class="card-details-1 clearfix">
+                  <span class="card-date float-left">19.02.17</span>
+                  <a class="card-username float-right" href="#">Username</a>
                 </div>
-                <div class="row">
-                  <div class="col-6 card-duration">
-                    7:56 min
-                  </div>
-                  <div class="col-6 card-votes">
-                    20 Votes
-                  </div>
+                <div class="card-details-2 clearfix">
+                  <span class="card-duration float-left">7:56 min</span>
+                  <span class="card-votes float-right">20 Votes</span>
                 </div>
                 <a class="card-btn" href="#">View Video</a>
               </div>
             </div>
-            <div class="col-4 card">
+            <div class="col-sm-4 card">
               <img src="assets/teaser.jpg" alt="teaser">
               <div class="card-body">
                 <h5 class="card-title">Video Title</h5>
-                <div class="row">
-                  <div class="col-6 card-date">
-                    19.02.17
-                  </div>
-                  <div class="col-6 card-username">
-                    <a href="#">Username</a>
-                  </div>
+                <div class="card-details-1 clearfix">
+                  <span class="card-date float-left">19.02.17</span>
+                  <a class="card-username float-right" href="#">Username</a>
                 </div>
-                <div class="row">
-                  <div class="col-6 card-duration">
-                    7:56 min
-                  </div>
-                  <div class="col-6 card-votes">
-                    20 Votes
-                  </div>
+                <div class="card-details-2 clearfix">
+                  <span class="card-duration float-left">7:56 min</span>
+                  <span class="card-votes float-right">20 Votes</span>
                 </div>
                 <a class="card-btn" href="#">View Video</a>
               </div>
             </div>
-            <div class="col-4 card">
+            <div class="col-sm-4 card">
               <img src="assets/teaser.jpg" alt="teaser">
               <div class="card-body">
                 <h5 class="card-title">Video Title</h5>
-                <div class="row">
-                  <div class="col-6 card-date">
-                    19.02.17
-                  </div>
-                  <div class="col-6 card-username">
-                    <a href="#">Username</a>
-                  </div>
+                <div class="card-details-1 clearfix">
+                  <span class="card-date float-left">19.02.17</span>
+                  <a class="card-username float-right" href="#">Username</a>
                 </div>
-                <div class="row">
-                  <div class="col-6 card-duration">
-                    7:56 min
-                  </div>
-                  <div class="col-6 card-votes">
-                    20 Votes
-                  </div>
+                <div class="card-details-2 clearfix">
+                  <span class="card-duration float-left">7:56 min</span>
+                  <span class="card-votes float-right">20 Votes</span>
                 </div>
                 <a class="card-btn" href="#">View Video</a>
               </div>
@@ -137,71 +119,47 @@
 
           <!-- VIDEO ROW 2 -->
           <section class="row">
-            <div class="col-4 card">
+            <div class="col-sm-4 card">
               <img src="assets/teaser.jpg" alt="teaser">
               <div class="card-body">
                 <h5 class="card-title">Video Title</h5>
-                <div class="row">
-                  <div class="col-6 card-date">
-                    19.02.17
-                  </div>
-                  <div class="col-6 card-username">
-                    <a href="#">Username</a>
-                  </div>
+                <div class="card-details-1 clearfix">
+                  <span class="card-date float-left">19.02.17</span>
+                  <a class="card-username float-right" href="#">Username</a>
                 </div>
-                <div class="row">
-                  <div class="col-6 card-duration">
-                    7:56 min
-                  </div>
-                  <div class="col-6 card-votes">
-                    20 Votes
-                  </div>
+                <div class="card-details-2 clearfix">
+                  <span class="card-duration float-left">7:56 min</span>
+                  <span class="card-votes float-right">20 Votes</span>
                 </div>
                 <a class="card-btn" href="#">View Video</a>
               </div>
             </div>
-            <div class="col-4 card">
+            <div class="col-sm-4 card">
               <img src="assets/teaser.jpg" alt="teaser">
               <div class="card-body">
                 <h5 class="card-title">Video Title</h5>
-                <div class="row">
-                  <div class="col-6 card-date">
-                    19.02.17
-                  </div>
-                  <div class="col-6 card-username">
-                    <a href="#">Username</a>
-                  </div>
+                <div class="card-details-1 clearfix">
+                  <span class="card-date float-left">19.02.17</span>
+                  <a class="card-username float-right" href="#">Username</a>
                 </div>
-                <div class="row">
-                  <div class="col-6 card-duration">
-                    7:56 min
-                  </div>
-                  <div class="col-6 card-votes">
-                    20 Votes
-                  </div>
+                <div class="card-details-2 clearfix">
+                  <span class="card-duration float-left">7:56 min</span>
+                  <span class="card-votes float-right">20 Votes</span>
                 </div>
                 <a class="card-btn" href="#">View Video</a>
               </div>
             </div>
-            <div class="col-4 card">
+            <div class="col-sm-4 card">
               <img src="assets/teaser.jpg" alt="teaser">
               <div class="card-body">
                 <h5 class="card-title">Video Title</h5>
-                <div class="row">
-                  <div class="col-6 card-date">
-                    19.02.17
-                  </div>
-                  <div class="col-6 card-username">
-                    <a href="#">Username</a>
-                  </div>
+                <div class="card-details-1 clearfix">
+                  <span class="card-date float-left">19.02.17</span>
+                  <a class="card-username float-right" href="#">Username</a>
                 </div>
-                <div class="row">
-                  <div class="col-6 card-duration">
-                    7:56 min
-                  </div>
-                  <div class="col-6 card-votes">
-                    20 Votes
-                  </div>
+                <div class="card-details-2 clearfix">
+                  <span class="card-duration float-left">7:56 min</span>
+                  <span class="card-votes float-right">20 Votes</span>
                 </div>
                 <a class="card-btn" href="#">View Video</a>
               </div>
@@ -215,10 +173,29 @@
 
     <!-- FOOTER -->
     <footer class="container-fluid">
-      <div class="container p-y-2">
-        mydirtyhobby.com © Copyright 2017 Colbette II Ltd. | Trademarks MG Licensing Europe S.à.r.l.
+      <div class="container">
+        <p class="copyright">
+          mydirtyhobby.com © Copyright 2017 Colbette II Ltd. | Trademarks MG Licensing Europe S.à.r.l.
+        </p>
       </div>
     </footer>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1} 
+        slides[slideIndex-1].style.display = "block"; 
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
 
   </body>
 </html>

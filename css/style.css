@@ -1,6 +1,7 @@
 /*
  * RESET
  */
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, 
 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
@@ -16,6 +17,9 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* 
+ * GLOBAL
+ */
 html {
   font-size: 1rem; /* 16px */
 }
@@ -26,7 +30,17 @@ body {
   color: #333;
 }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 100%;
+}
+
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -41,67 +55,39 @@ em {
 }
 
 /*
+ * BANNER
+ */
+
+.mySlides {
+  display: none;
+}
+
+/*
+ * ARTICLE
+ */
+
+article {
+  padding: 0.625rem;
+}
+
+/*
  * HEADER 
  */
 
 header {
   background-color: #fff;
   border-bottom: 2px solid #b00000;
+  padding: 1.25rem 0;
+  height: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-  margin-bottom: 0.625rem;
-  padding: 1.25rem 0.625rem;
 }
 
-.account-settings {
-  text-align: right;
+.logo {
+  text-align: center;
 }
 
-.account-settings ul {
-  position: relative;
-  bottom: 0.625rem; /* 10px */
-}
-
-.account-settings ul li { 
+.logo a img {
   display: inline-block;
-  padding-left: 0.3125rem; /* 5px */
-}
-
-.account-settings ul li:first-child:after {
-  content: "|";
-  color: #b00000;
-  padding-left: 1.25rem; /* 20px */
-}
-
-/*
- * SIDEBAR
- */
-
-.sidebar {
-  background-color: #fff;
-  height: 100%;
-  z-index: 1;
-  overflow-x: hidden;
-}
-
-.sidebar a {
-  display: block;
-  padding: 0.625rem;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: #333;
-}
-
-.signup-btn {
-  background: #01ab30;
-  color: #fff !important;
-  font-weight: bold;
-}
-
-/*
- * BANNER SLIDER
- */
-.banner {
-  margin-bottom: 1.25rem;
 }
 
 /*
@@ -113,16 +99,23 @@ header {
   color: #b00000;
   font-weight: bold;
   border-bottom: 1px solid #b00000;
+  margin-top: 1.25rem;
   margin-bottom: 0.625rem;
   padding: 0.625rem;
+  text-align: center;
 }
 
 /*
- * VIDEO CARD
+ * VIDEOS
  */
 
 .card {
   margin-bottom: 0.625rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.card img {
+  width: 100%;
 }
 
 .card-body {
@@ -131,16 +124,11 @@ header {
 
 .card-title {
   border-bottom: 1px solid #b00000;
-  background: #fff;
+  background-color: #fff;
   padding: 0.625rem;
 }
 
-.card-date, .card-duration {
-  padding: 0.625rem;
-}
-
-.card-username, .card-votes {
-  text-align: right;
+.card-details-1, .card-details-2 {
   padding: 0.625rem;
 }
 
@@ -152,7 +140,7 @@ header {
   border-top: 1px solid #fff;
   text-align: center;
   display: block;
-  background: #cbcbcb;
+  background-color: #cbcbcb;
   color: #01ab30;
   padding: 0.625rem;
 }
@@ -162,15 +150,39 @@ header {
  */
 
 footer {
-  margin-top: 6rem; /* 96px */
   background-color: #2b2b2b;
   color: #fff;
-  padding: 1.25rem 0.625rem;
   font-weight: bold;
+  padding: 1.25rem 0;
+  text-align: center;
 }
 
-.flexbox-centering {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.copyright {
+  padding: 0 0.625rem;
+}
+
+/*
+ * HELPER CLASSES
+ */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
 }
