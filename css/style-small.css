@@ -9,3 +9,11 @@
 .d-sm-block {
   display: block;
 }
+
+.flex-sm-column {
+  flex-direction: column;
+}
+
+.flex-sm-row {
+  flex-direction: row !important;
+}

@@ -10,6 +10,14 @@
   display: block !important;
 }
 
+.flex-md-column {
+  flex-direction: column;
+}
+
+.flex-md-row {
+  flex-direction: row !important;
+}
+
 /*
  * HEADER 
  */
@@ -31,12 +39,8 @@
  */
 
 main .sidebar {
-  background-color: #fff;
-  overflow:auto
-  height: auto;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
   margin: 0.625rem;
-  position: static;
 }
 
 .sidebar a {
