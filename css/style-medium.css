@@ -7,12 +7,16 @@
 }
 
 .d-md-block {
-  display: block;
+  display: block !important;
 }
 
 /*
  * HEADER 
  */
+
+.logo {
+  margin-left: 0.625rem;
+}
 
 /*
  * BANNER SLIDER
@@ -26,13 +30,13 @@
  * SIDEBAR
  */
 
-.sidebar {
+main .sidebar {
   background-color: #fff;
-  height: 100%;
-  z-index: 1;
-  overflow: hidden;
+  overflow:auto
+  height: auto;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
-  margin: 0.625rem 0 0 0.625rem;
+  margin: 0.625rem;
+  position: static;
 }
 
 .sidebar a {
@@ -43,6 +47,14 @@
   color: #333;
   margin-bottom: -1px;
   display: block;
+}
+
+.sidebar a:hover {
+  background-color: #cbcbcb;
+}
+
+.signup-btn:hover {
+  background-color: #01982c !important;
 }
 
 /* 
@@ -59,4 +71,12 @@ footer.container-fluid {
 
 article {
   padding-left: 0 !important;
+}
+
+/*
+ * MENU BUTTON
+ */
+
+.menu-btn:hover {
+  cursor: pointer;
 }

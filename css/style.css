@@ -46,6 +46,10 @@ img {
   height: auto;
 }
 
+ul, ol {
+  list-style-type: none;
+}
+
 a {
   color: #b00000;
   text-decoration: none;
@@ -198,18 +202,10 @@ footer {
   display: block;
 }
 
-.sidebar a:hover {
-  background-color: #cbcbcb;
-}
-
 .signup-btn {
   background-color: #01ab30;
   color: #fff !important;
   font-weight: bold;
-}
-
-.signup-btn:hover {
-  background-color: #01982c !important;
 }
 
 /*
@@ -278,10 +274,6 @@ footer {
   display: block;
   margin: 8px auto;
   transition: all 0.3s ease-in-out;
-}
-
-.menu-btn:hover {
-  cursor: pointer;
 }
 
 #menu-btn.expanded .line:nth-child(2) {
