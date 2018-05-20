@@ -84,3 +84,11 @@ article {
 .menu-btn:hover {
   cursor: pointer;
 }
+
+/*
+ * SEARCH FORM
+ */
+
+.search-form button[type=submit] {
+  cursor: pointer;
+}

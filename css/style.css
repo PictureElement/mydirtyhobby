@@ -129,8 +129,28 @@ header .container {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
 }
 
-.card img {
+.card-header {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-image {
   width: 100%;
+}
+
+.card-roll-out-description {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow-y: hidden;
+  background: rgb(236,236,236);
+  font-size: 12px;
+  padding: 10px;
+  opacity: 0;
+}
+
+.card-roll-out-description--transition {
+  transition: opacity .5s ease;
 }
 
 .card-body {
@@ -140,7 +160,8 @@ header .container {
 .card-title {
   border-bottom: 1px solid #b00000;
   background-color: #fff;
-  padding: 0.625rem;
+  padding: 0.625rem 0.625rem 0.625rem 3rem;
+  position: relative;
 }
 
 .card-details-1, .card-details-2 {
