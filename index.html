@@ -131,7 +131,7 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">
-                    <i style="position:absolute;font-size:35px;color:red;bottom:1px;left:10px;" class="fa fa-play-circle-o" aria-hidden="true"></i> Video Title
+                    <i style="position:absolute;font-size:35px;color:#b00000;bottom:1px;left:10px;" class="fa fa-play-circle-o" aria-hidden="true"></i> Video Title
                   </h5>
                   <div class="card-details-1 clearfix">
                     <span class="card-date float-left">19.02.17</span>
@@ -161,7 +161,7 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">
-                    <i style="position:absolute;font-size:35px;color:red;bottom:1px;left:10px;" class="fa fa-play-circle-o" aria-hidden="true"></i> Video Title
+                    <i style="position:absolute;font-size:35px;color:#b00000;bottom:1px;left:10px;" class="fa fa-play-circle-o" aria-hidden="true"></i> Video Title
                   </h5>
                   <div class="card-details-1 clearfix">
                     <span class="card-date float-left">19.02.17</span>
@@ -191,7 +191,7 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">
-                    <i style="position:absolute;font-size:35px;color:red;bottom:1px;left:10px;" class="fa fa-play-circle-o" aria-hidden="true"></i> Video Title
+                    <i style="position:absolute;font-size:35px;color:#b00000;bottom:1px;left:10px;" class="fa fa-play-circle-o" aria-hidden="true"></i> Video Title
                   </h5>
                   <div class="card-details-1 clearfix">
                     <span class="card-date float-left">19.02.17</span>
@@ -279,9 +279,27 @@
         }
       }
       // OVERLAY TEXT
+      var rollOuts = document.querySelectorAll(".card-roll-out");
+
+      for (var  i = 0; i < rollOuts.length; i++) {
+        rollOuts[i].onmouseenter = function(e) {
+          var rollOutDescription = e.target.firstElementChild;
+          if (rollOutDescription.getAttribute("aria-expanded") === "false") {
+            rollOutDescription.style.opacity = "0.9";
+            rollOutDescription.setAttribute("aria-expanded", "true");
+          }
+        }
+        rollOuts[i].onmouseleave = function(e) {
+          var rollOutDescription = e.target.firstElementChild;
+          rollOutDescription.style.opacity = "0";
+          rollOutDescription.setAttribute("aria-expanded", "false");
+        }
+      }
+      /*
       var videoContainer = document.getElementById("videos");
       videoContainer.addEventListener("click", function (e) {
         if ( (e.target.classList.contains("card-roll-out-description")) && !(e.target.classList.contains("card-roll-out-description--transition")) ) {
+
           var rollOutDescription = e.target;
           var first, last, invert, play, currentOpacity;
 
@@ -318,12 +336,11 @@
 
           // Capture the end with transitionend
           rollOutDescription.addEventListener("transitionend", function handler() {
-            //alert("end of transition");
             rollOutDescription.classList.remove("card-roll-out-description--transition");
             rollOutDescription.removeEventListener("transitionend", handler);
           });
         }
-      });
+      });*/
     </script>
   </body>
 </html>

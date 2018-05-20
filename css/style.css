@@ -138,19 +138,19 @@ header .container {
   width: 100%;
 }
 
-.card-roll-out-description {
+.card-roll-out {
   position: absolute;
   top: 0;
+  overflow-y: auto;
   height: 100%;
-  overflow-y: hidden;
-  background: rgb(236,236,236);
-  font-size: 12px;
-  padding: 10px;
-  opacity: 0;
 }
 
-.card-roll-out-description--transition {
-  transition: opacity .5s ease;
+.card-roll-out-description {
+  background: rgb(236,236,236);
+  opacity: 0;
+  transition: opacity 1s ease;
+  font-size: 12px;
+  padding: 10px;
 }
 
 .card-body {
