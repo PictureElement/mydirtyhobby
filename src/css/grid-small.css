@@ -16,11 +16,6 @@
   margin-right: 0.625rem; /* 10px */
 }
 
-[class*="col-sm-"] {
-  /*border: 1px solid red;*/
-  margin-right: 0.625rem; /* 10px */
-}
-
 .row [class*="col-sm-"]:last-child {
   margin-right: 0;
 }

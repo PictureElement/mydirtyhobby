@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="PictureElement (Marios Sofokleous)">
     <title>Landing page</title>
     <!-- Web icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,26 +17,30 @@
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/grid-medium.css">
   </head>
   <body>
-
     <!-- HEADER -->
     <header class="container-fluid">
       <div class="container">
+
         <!-- SEARCH FORM -->
         <form id="search-form" class="search-form d-none">
           <input type="search"><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
+
         <!-- MENU BUTTON -->
         <div role="button" class="menu-btn d-md-none" id="menu-btn" onclick="animateMenu(this)">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </div>
+
         <!-- LOGO -->
         <a id="logo" class="logo" href="#"><img width="150" src="assets/logo.jpg" alt="logo"></a>
+        
         <!-- SEARCH BUTTON -->
         <div role="button" class="search-btn" id="search-btn" onclick="animateSearch(this)">
           <i class="fa fa-search" aria-hidden="true"></i>
         </div>
+      
       </div>
     </header>
 
@@ -45,7 +50,7 @@
 
         <!-- SIDEBAR -->
         <section id="sidebar" class="col-md-3 d-none d-md-block sidebar">
-          <!--<a href="#" class="signup-btn d-none"><em>FREE</em> SIGNUP</a>-->
+          <a href="#" class="signup-btn d-none"><em>FREE</em> SIGNUP</a>
           <ol>
             <li>
               <a href="#">WEBCAMS</a>
@@ -99,18 +104,18 @@
           <!-- BANNER SLIDER -->
           <section class="banner">
             <!-- Banner 1 -->
-            <div class="mySlides">
+            <div class="banner-slide">
               <a href="#"><img src="assets/banner_01.jpg" alt="banner 1"></a>
             </div>
             <!-- Banner 2 -->
-            <div class="mySlides">
+            <div class="banner-slide">
               <a href="#"><img src="assets/banner_02.jpg" alt="banner 2"></a>
             </div>
           </section>
-        
+
           <!-- CATEGORY TITLE -->
           <h1 class="category-title">Top Videos</h1>
-          
+
           <!-- VIDEOS -->
           <section id="videos" class="videos">
             <div class="row flex-column flex-sm-row">
@@ -120,7 +125,7 @@
                     <img id="1" class="card-image" src="assets/teaser.png" alt="teaser">
                   </div>
                   <div class="card-roll-out">
-                    <p class="card-roll-out-description" aria-expanded="false">
+                    <p class="card-roll-out-description">
                       Lorem ipsum dolor sit amet, consetetur elitr, sed diam 
                       nonumy eirmod tempor invidunt ut labore et dolore magna 
                       aliquyam erat, sed diam voluptua. At vero eos et accusam et 
@@ -150,7 +155,7 @@
                     <img id="2" class="card-image" src="assets/teaser.png" alt="teaser">
                   </div>
                   <div class="card-roll-out">
-                    <p class="card-roll-out-description" aria-expanded="false">
+                    <p class="card-roll-out-description">
                       Lorem ipsum dolor sit amet, consetetur elitr, sed diam 
                       nonumy eirmod tempor invidunt ut labore et dolore magna 
                       aliquyam erat, sed diam voluptua. At vero eos et accusam et 
@@ -180,7 +185,7 @@
                     <img id="3" class="card-image" src="assets/teaser.png" alt="teaser">
                   </div>
                   <div class="card-roll-out">
-                    <p class="card-roll-out-description" aria-expanded="false">
+                    <p class="card-roll-out-description">
                       Lorem ipsum dolor sit amet, consetetur elitr, sed diam 
                       nonumy eirmod tempor invidunt ut labore et dolore magna 
                       aliquyam erat, sed diam voluptua. At vero eos et accusam et 
@@ -212,7 +217,7 @@
                     <img id="4" class="card-image" src="assets/teaser.png" alt="teaser">
                   </div>
                   <div class="card-roll-out">
-                    <p class="card-roll-out-description" aria-expanded="false">
+                    <p class="card-roll-out-description">
                       Lorem ipsum dolor sit amet, consetetur elitr, sed diam 
                       nonumy eirmod tempor invidunt ut labore et dolore magna 
                       aliquyam erat, sed diam voluptua. At vero eos et accusam et 
@@ -242,7 +247,7 @@
                     <img id="5" class="card-image" src="assets/teaser.png" alt="teaser">
                   </div>
                   <div class="card-roll-out">
-                    <p class="card-roll-out-description" aria-expanded="false">
+                    <p class="card-roll-out-description">
                       Lorem ipsum dolor sit amet, consetetur elitr, sed diam 
                       nonumy eirmod tempor invidunt ut labore et dolore magna 
                       aliquyam erat, sed diam voluptua. At vero eos et accusam et 
@@ -272,7 +277,7 @@
                     <img id="6" class="card-image" src="assets/teaser.png" alt="teaser">
                   </div>
                   <div class="card-roll-out">
-                    <p class="card-roll-out-description" aria-expanded="false">
+                    <p class="card-roll-out-description">
                       Lorem ipsum dolor sit amet, consetetur elitr, sed diam 
                       nonumy eirmod tempor invidunt ut labore et dolore magna 
                       aliquyam erat, sed diam voluptua. At vero eos et accusam et 
@@ -297,7 +302,6 @@
                 </div>
               </div>
             </div>
-            </div>
           </section>
 
         </article>
@@ -313,7 +317,6 @@
         </p>
       </div>
     </footer>
-
     <script>
       /*
        * BANNER
@@ -323,7 +326,7 @@
 
       function showSlides() {
         var i;
-        var slides = document.getElementsByClassName("mySlides");
+        var slides = document.getElementsByClassName("banner-slide");
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none"; 
         }
@@ -332,6 +335,7 @@
         slides[slideIndex-1].style.display = "block"; 
         setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
+
       /*
        * MENU BUTTON
        */
@@ -345,6 +349,7 @@
           element.classList.add("expanded");
         }
       }
+
       /*
        * SEARCH BUTTON
        */
@@ -366,6 +371,7 @@
           element.classList.add("expanded");
         }
       }
+
       /*
        * SIDEBAR ACCORDION
        */
@@ -379,6 +385,7 @@
           element.classList.add("expanded");
         }
       }
+
       /*
        * OVERLAY TEXT & SLIDESHOW
        */
@@ -397,16 +404,14 @@
         rollOuts[i].onmouseenter = function(e) {
           var image = e.target.previousElementSibling.firstElementChild;
           var rollOutDescription = e.target.firstElementChild;
-          rollOutDescription.style.opacity = "0.9";
-          rollOutDescription.setAttribute("aria-expanded", "true");
+          rollOutDescription.classList.add("card-roll-out-description--expanded");
           timeoutID = window.setTimeout(startPreview, delay, image, rollOutDescription);
         }
 
         rollOuts[i].onmouseleave = function(e) {
           var image = e.target.previousElementSibling.firstElementChild;
           var rollOutDescription = e.target.firstElementChild;
-          rollOutDescription.style.opacity = "0";
-          rollOutDescription.setAttribute("aria-expanded", "false");
+          rollOutDescription.classList.remove("card-roll-out-description--expanded");
           window.clearTimeout(timeoutID);
           clearInterval(nIntervId);
           // restore placeholder
@@ -429,8 +434,7 @@
         }
         
         // Make overlay disappear
-        rollOutDescription.style.opacity = "0";
-        rollOutDescription.setAttribute("aria-expanded", "false");
+        rollOutDescription.classList.remove("card-roll-out-description--expanded");
         
         // Image identification
         var identification = image.id;
@@ -444,54 +448,6 @@
         image.src = imageArray[index];
         nIntervId = setInterval(changeImage, interval);
       }
-
-  
-      /*
-      var videoContainer = document.getElementById("videos");
-      videoContainer.addEventListener("click", function (e) {
-        if ( (e.target.classList.contains("card-roll-out-description")) && !(e.target.classList.contains("card-roll-out-description--transition")) ) {
-
-          var rollOutDescription = e.target;
-          var first, last, invert, play, currentOpacity;
-
-          currentOpacity = Number(window.getComputedStyle(rollOutDescription).getPropertyValue("opacity")); // number
-          first = currentOpacity; // number
-
-          // Set the element to the last position
-          if (rollOutDescription.getAttribute("aria-expanded") === "true") {
-            rollOutDescription.style.opacity = "0";
-            rollOutDescription.setAttribute("aria-expanded", "false");
-          }
-          else {
-            rollOutDescription.style.opacity = "0.9";
-            rollOutDescription.setAttribute("aria-expanded", "true");
-          }
-
-          currentOpacity = Number(window.getComputedStyle(rollOutDescription).getPropertyValue("opacity")); // number
-          last = currentOpacity; // number
-
-          // Invert
-          invert = currentOpacity - (last - first); // number
-          console.log("invert = " + invert);
-          rollOutDescription.style.opacity = invert.toString(); // Apply transforms to reverse, or invert, them
-          currentOpacity = invert;
-
-          // Play
-          requestAnimationFrame(function () {
-            rollOutDescription.classList.add("card-roll-out-description--transition"); // Switch on transitions for any of the properties you changed
-            play = currentOpacity + (last - first); // number
-            console.log("play = " + play);
-            rollOutDescription.style.opacity = play.toString();
-            currentOpacity = play;
-          });
-
-          // Capture the end with transitionend
-          rollOutDescription.addEventListener("transitionend", function handler() {
-            rollOutDescription.classList.remove("card-roll-out-description--transition");
-            rollOutDescription.removeEventListener("transitionend", handler);
-          });
-        }
-      });*/
     </script>
   </body>
 </html>
