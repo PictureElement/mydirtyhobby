@@ -1,0 +1,34 @@
+Please create a landingpage based on the provided screen (layout.jpg)
+all needed media are provided with this briefing under assets/.
+
+
+general requirements:
+
+1. provide stable landingpage in HTML5 and CSS3, with a high focus on SEO. 
+- page must be centered and flexible (fluid) with max width should be 1280px and min width 900px.
+- do not use a framework, write all CSS from scratch
+- get all informations (sizes, colors) from the Design. You can use every Graphic tool
+
+2. Create a collapsible Menu with a smooth CSS anaimation
+
+3. implement banners as HTML5 Banner Slider
+
+4. all teasers should have a roll-out description container with different char counts
+
+5. add some hover|active stylings to the links and buttons (be creative)  
+
+6. video thumbnails when hovered for 5 seconds, make roll-out disappear and switch to the images from the assets/thumbnails folder, images should appear in sequence with a 2 second delay as a slideshow. All images should be loaded only when needed.
+
+
+You can also deliver a php file where you can use some loops or other helpers. Feel free to use some Task runner e.g. grunt or gulp. You can also create your stylings in sass/scss but be sure, that you attach the final generated CSS file and the original SCSS file.
+
+
+Brand color: #ab0000
+Font: Helvetica, Arial 
+
+Teaser Text example:
+Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+
+Footer text:
+mydirtyhobby.com © Copyright 2017 Colbette II Ltd.
+Trademarks MG Licensing Europe S.à.r.l.

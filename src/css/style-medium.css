@@ -1,0 +1,94 @@
+/*
+ * RESPONSIVE
+ */
+ 
+.d-md-none {
+  display: none;
+}
+
+.d-md-block {
+  display: block !important;
+}
+
+.flex-md-column {
+  flex-direction: column;
+}
+
+.flex-md-row {
+  flex-direction: row !important;
+}
+
+/*
+ * HEADER 
+ */
+
+.logo {
+  margin-left: 0.625rem;
+}
+
+/*
+ * BANNER SLIDER
+ */
+
+/*
+ * CATEGORY TITLE
+ */
+
+/*
+ * SIDEBAR
+ */
+
+main .sidebar {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+  margin: 0.625rem;
+}
+
+.sidebar a {
+  display: block;
+  padding: 0.625rem;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.125);
+  color: #333;
+  margin-bottom: -1px;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #cbcbcb;
+}
+
+.signup-btn:hover {
+  background-color: #01982c !important;
+}
+
+/* 
+ * FOOTER 
+ */
+
+footer.container-fluid {
+  text-align: left;
+}
+
+/*
+ * ARTICLE
+ */
+
+article {
+  padding-left: 0 !important;
+}
+
+/*
+ * MENU BUTTON
+ */
+
+.menu-btn:hover {
+  cursor: pointer;
+}
+
+/*
+ * SEARCH FORM
+ */
+
+.search-form button[type=submit] {
+  cursor: pointer;
+}
