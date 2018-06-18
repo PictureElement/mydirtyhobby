@@ -1,0 +1,8 @@
+1. The site was developed to be mobile first.
+
+2. The site was built using a responsive 12-column Flexbox grid system.
+
+3. There are two major breakpoints:
+
+576 (small)
+768 (medium)
